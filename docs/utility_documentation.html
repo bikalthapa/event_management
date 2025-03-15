@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utility Classes Documentation</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body class="light_mode">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Utility Classes Docs</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#colors">Colors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#shadows">Shadows</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#animations">Animations</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h1>Utility Classes Documentation</h1>
+    <p>Here are some examples of utility classes for colors, shadows, and animations.</p>
+    
+    <h2 id="colors">Colors</h2>
+    <div class="p-3 bg_primary text-white mb-3">.bg_primary</div>
+    <div class="p-3 bg_secondary text-white mb-3">.bg_secondary</div>
+
+    <h2 id="shadows">Shadows</h2>
+    <div class="p-3 bg_light text-dark shadow_box mb-3">.shadow_box</div>
+
+    <h2 id="animations">Animations</h2>
+    <div class="p-3 bg_info text-white animate_fade_in mb-3">.animate_fade_in</div>
+  </div>
+
+  <footer class="mt-5">
+    <div class="container">
+      <button class="btn btn-primary" onclick="switchMode('light_mode')">Light Mode</button>
+      <button class="btn btn-secondary" onclick="switchMode('dark_mode')">Dark Mode</button>
+      <button class="btn btn-warning" onclick="switchMode('solarized_mode')">Solarized Mode</button>
+      <button class="btn btn-dark" onclick="switchMode('high_contrast_mode')">High Contrast Mode</button>
+      <button class="btn btn-info" onclick="switchMode('pastel_mode')">Pastel Mode</button>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript to switch modes
+    function switchMode(mode) {
+      document.body.className = mode;
+    }
+  </script>
+</body>
+</html>

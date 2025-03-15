@@ -1,0 +1,96 @@
+/* This is for hero section only  */
+.carousel-item img {
+    width: 100%;
+    height: clamp(400px, 700px, 100vh);
+    aspect-ratio: 16/9;
+}
+
+.hero_section_overlay {
+    background-color: rgba(var(--dark_trans_3), 0.45);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 100%;
+}
+
+.hero_section_overlay .title {
+    color: var(--light_1);
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+.hero_section_overlay .subtitle {
+    color: var(--light_1);
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: justify;
+}
+
+
+
+
+
+/* This is for service cards  */
+.service_cards {
+    background-color: var(--dark_3);
+    color: var(--light_3);
+    box-shadow:var(--shadow_1);
+    border:1px solid var(--light_1);
+}
+
+.service_cards .card-title {
+    font-size: 35px;
+    position: relative;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.service_cards .card-title::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: -10px;
+    height: 100%;
+    width: 5px;
+    border-radius: 2px;
+    background-color: var(--sunset);
+}
+
+.service_cards .card-img-overlay {
+    background-color: rgba(var(--dark_trans_1), 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+/* This is for parallax effect  */
+.parallax {
+    background-image: url('../images/wedding.jpg');
+    height: clamp(200px, 100vh, 400px);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    padding: 20px;
+    background-color:rgba(var(--dark_trans_1), 0.6);
+    height:100%;
+    color: var(--light_1);
+    position: relative;
+    z-index: 1;
+}
+.content .title{
+    color:var(--light_1);
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/portfolio.css">
+</head>
+<!-- Navbar -->
+<header class="header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png" class="navbar_logo" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse  navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav d-flex justify-content-end w-100 gap-4 text-center fs-6 fs-bold">
+          <li class="nav-item">
+            <a class="nav-link active_nav" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blogs.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="testimonials.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about_us.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <button class="theme_toggler" id="theme_toggler">
+    <img src="assets/icons/light_mode.svg" id="theme_icon" />
+  </button>
+</header>
+<!--
+Arlo Web Control Demo - Events list
+Documentation: https://developer.arlo.co/doc/webcontrols/upcomingevents
+-->
+
+<!-- Target Elements -->
+<div class="arlo">
+    <div class="arlo-filters-container">
+        <div id="filters"></div>
+    
+        <div id="arlo-filter-toggle">
+        <div class="arlo-filter-toggle-show">
+            Show filters <i class="fa fa-chevron-down"></i>
+        </div>
+        <div class="arlo-filter-toggle-hide">
+            Hide filters <i class="fa fa-chevron-up"></i>
+        </div>
+        </div>
+    </div>
+    <div id="upcoming-events"></div>
+    </div>
+    
+    <!-- Templates -->
+    <script type='text/template' id='filter-template'>
+    <div class="arlo-filters arlo-font-primary">
+        <div class="arlo-other-filters arlo-clearfix arlo-font-primary">
+        <%= showFilter({filterCode: "templatecategory"}) %>
+        <%= showFilter({filterCode: "months"}) %>
+        <%= showFilter({filterCode: "locname"}) %>
+        </div>
+    </div>
+    </script>
+    
+    <script type='text/template' id='upcoming-events-template'>
+        <% if (typeof(Location.IsOnline) !== "undefined" && Location.IsOnline === true && (typeof(Location.Name) !== "undefined" && Location.Name !== "")) { %>
+            <div class="arlo-event-card arlo-online-card">
+        <% } else { %>
+            <div class="arlo-event-card">
+        <% } %>
+    
+            <div class="arlo-event-card-front">
+            
+            <div class="arlo-date">
+                <div class="arlo-date-container arlo-text-color-contrast">
+                <div class="arlo-start-date">
+                    <%= SmartDateFields.startDay %>
+                </div>
+                <div class="arlo-start-month">
+                    <%= SmartDateFields.startMonth %>
+                </div>
+                </div>
+            </div>
+            
+            <div class="arlo-event-image" style="background-image: url(<%= ListImageUri %>)"></div>
+    
+            <div class="arlo-detail">
+                <% if (typeof(Provider.Name) !== "undefined" && Provider.Name !== "") { %>
+                <div class="arlo-provider-name">
+                    Provided by <%= Provider.Name %>
+                </div>
+                <% }%>
+                
+                <div class="arlo-name arlo-text-color-contrast">
+                <%- Name %>
+                </div>
+    
+                <div class="arlo-location arlo-text-color-contrast">
+                <%- Location.Name %>
+                </div>
+            </div>
+    
+            </div>
+    
+            <div class="arlo-event-card-back">
+    
+                <div class="arlo-summary arlo-text-color-contrast">
+                    <%- Summary %>
+                </div>
+    
+                <%= formatRegistrationInfo('link') %>
+            </div>        
+        </div>
+    
+    </script>
+    
+    <!-- Dependencies -->
+    <script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="//packages.arlocdn.net/jscontrols/1.0/resources/resizesensor.js" charset="utf-8"></script>
+    <script type="text/javascript" src="//packages.arlocdn.net/jscontrols/1.0/resources/elementqueries.js" charset="utf-8"></script>
+    <script type="text/javascript" src="//connect.arlocdn.net/jscontrols/1.1/init.js" charset="utf-8" defer="defer"></script>
+    
+
+
+
+
+
+
+            
+    
+    
+    <!-- Developer Section -->
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <p>Developed by <a href="https://www.developerwebsite.com" class="text-white text-decoration-none"
+                            target="_blank">Tech BARSA</a></p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

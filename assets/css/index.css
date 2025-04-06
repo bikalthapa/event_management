@@ -47,7 +47,9 @@
     margin-left: 5px;
     display: inline-block;
 }
-
+.service_cards .card-text{
+    font-weight:400;
+}
 .service_cards .card-title::before {
     content: '';
     position: absolute;
@@ -78,7 +80,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .content {
     display:flex;
     justify-content: center;
@@ -90,7 +91,106 @@
     color: var(--light_1);
     position: relative;
     z-index: 1;
+    font-weight:500;
 }
 .content .title{
     color:var(--light_1);
+}
+
+
+
+
+
+/* Design For Pricing Cards  */
+.pricing_card{
+    background-color: rgba(var(--light_trans_1),0.85);
+    color: var(--dark_1);
+    font-weight:400;
+    box-shadow:var(--shadow_1);
+    border:1px solid var(--light_1);
+    border-radius:10px;
+    padding:15px;
+    height:100%;
+    min-height:450px;
+    position:relative;
+
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: space-between; 
+}
+.pricing_card .subscription{
+    position:relative;
+    top:25px;
+}
+ .subscription .subscription_title{
+    background-color:var(--sunset);
+    padding:10px;
+    font-size:2em;
+    color:white;
+    padding-left:10%;
+    clip-path: polygon(0 0, 100% 0%, 63% 99%, 0% 100%);
+    position:relative;
+    top:5%;
+    width:100%;
+    left:-35px;
+}
+.subscription .back_side{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    background-color:rgb(150, 7, 7);
+    z-index:-1;
+    left:-25px;
+    bottom:-25px;
+}
+.pricing_card .price{
+    text-align:center;
+}
+.price .value{
+    font-size:1.5em;
+    font-weight:700;
+    text-align:center;
+}
+.price .duration{
+    font-size:1em;
+    font-weight:400;
+    text-align:center;
+}
+.pricing_card .features_list{
+    list-style-type: none;
+    padding:0;
+    flex-grow:1;
+    margin:0;
+}
+.features_list li{
+    margin-top:6px;
+}
+.features_list .available{
+    color:var(--sunset);
+    position:relative;
+    padding-left:16%;
+}
+.features_list .available::before{
+    content:'✔️';
+    position:absolute;
+    left:0px;
+    color:var(--sunset);
+    z-index:3;
+    font-size:1.2em;
+    font-weight:100;
+}
+.features_list .not_available{
+    color:var(--dark_3);
+    position:relative;
+    padding-left:16%;
+}
+.features_list .not_available::before{
+    content:'❌';
+    position:absolute;
+    left:0px;
+    color:var(--dark_3);
+    z-index:3;
+    font-size:1.2em;
 }

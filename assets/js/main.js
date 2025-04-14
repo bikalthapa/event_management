@@ -15,3 +15,4 @@ theme_toggler.addEventListener("click", () => {
         document.body.classList.remove("light-mode");
     }
 });
+

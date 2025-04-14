@@ -3,7 +3,7 @@
 :root {
     --sunset: rgb(240, 75, 75);
 
-    --shadow_1: rgba(121, 107, 107, 0.146) 0px 7px 29px 0px;
+    --shadow_1:5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 @media (prefers-color-scheme:dark) {
@@ -131,7 +131,6 @@ body {
 }
 
 .nav-item .active_nav {
-    color: var(--light_4);
     position: relative;
 }
 

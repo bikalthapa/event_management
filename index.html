@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/testimonials.css">
     <link rel="icon" href="assets/images/logo.png">
 </head>
 
@@ -54,19 +56,25 @@
         </button>
     </header>
 
-
-
     <!-- Hero Section -->
-    <section data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000">
+    <section class="hero_section">
         <div class="card text-bg-dark">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+                <div class="card-img-overlay hero_section_overlay">
+                    <h5 class="card-title title">Creating Unforgettable Experiences</h5>
+                    <p class="card-text subtitle">
+                        We specialize in planning and executing events that leave a lasting impression. From corporate
+                        gatherings to weddings, we’ve got you covered.
+                    </p>
+                    <button class="CTA_solid">About Us</button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
                 </div>
                 <div class="carousel-inner hero-sectionr">
                     <div class="carousel-item active">
@@ -81,33 +89,12 @@
                         <img src="https://th.bing.com/th/id/R.ba41f46fb22c3e539f02725994afc6e9?rik=1cAnZ1wMt5KB9w&pid=ImgRaw&r=0"
                             class="d-block w-100" alt="...">
                     </div>
-                    <div class="hero_section_overlay">
-                        Hello I am overlay
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <div class="card-img-overlay hero_section_overlay">
-                <div class="container-sm p-5 m-5">
-                    <h5 class="card-title title">Creating Unforgettable Experiences</h5>
-                    <p class="card-text subtitle">
-                        We specialize in planning and executing events that leave a lasting impression. From corporate
-                        gatherings to weddings, we’ve got you covered.
-                    </p>
-                    <button class="CTA_solid">Explore Our Services</button>
                 </div>
             </div>
         </div>
-    </section><br><br>
+    </section><br><br><br>
+
+
 
 
     <!-- Our Services  -->
@@ -163,7 +150,7 @@
                 </div>
             </div>
         </div>
-    </section><br><br>
+    </section><br><br><br>
 
     <!-- Parallax CTA -->
     <section class="parallax">
@@ -174,13 +161,69 @@
                 <button class="CTA_solid">Contact Us</button>
             </div>
         </div>
-    </section><br><br>
+    </section><br><br><br>
+
+
+    <!-- Counter Container -->
+    <section class="container">
+        <div id="counterSection" class="row row-cols-1 row-cols-md-3 g-4"></div>
+    </section><br><br><br>
+
+    <!-- Testimonials Section  -->
+    <section class="container">
+        <div class="section">
+            <h1 class="section_title">Testimonials</h1>
+            <p class="section_description">Review From Our Clients</p>
+        </div><br><br>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="section_card">
+                    <span><i class="ri-double-quotes-l"></i></span>
+                    <h4>Love the simplicity</h4>
+                    <p>
+                        They understood our brand and created a stunning website design.
+                        Professional, responsive, and on-time delivery. Highly recommended!
+                    </p>
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" />
+                    <h5>Allan Collins</h5>
+                    <h6>Managing Director</h6>
+                </div>
+            </div>
+            <div class="col">
+                <div class="section_card">
+                    <span><i class="ri-double-quotes-l"></i></span>
+                    <h4>Excellent Designs</h4>
+                    <p>
+                        Efficient, reliable, and results-oriented. Visually appealing
+                        website, improved online visibility. Highly recommended!
+                    </p>
+                    <img src="https://cdni.iconscout.com/illustration/premium/thumb/male-user-image-illustration-download-in-svg-png-gif-file-formats--person-picture-profile-business-pack-illustrations-6515860.png?f=webp"
+                        alt="user" />
+                    <h5>Tanya Grant</h5>
+                    <h6>Ceo & Founder</h6>
+                </div>
+            </div>
+            <div class="col">
+                <div class="section_card">
+                    <span><i class="ri-double-quotes-l"></i></span>
+                    <h4>Efficient and Reliable</h4>
+                    <p>
+                        Best decision we made. Stunning website, exceptional support. Always
+                        available and prompt issue resolution. Hassle-free experience!
+                    </p>
+                    <img src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-512.png" alt="user" />
+                    <h5>Clay Washington</h5>
+                    <h6>Fashion Designer</h6>
+                </div>
+            </div>
+        </div>
+    </section><br><br><br>
 
 
     <!-- Pricing Section -->
     <div class="container">
         <div class="section">
-            <h1 class="section_title">Our Pricing & Plan</h1>
+            <h1 class="section_title">Pricing & Plan</h1>
             <p class="section_description">Affordable Plans for Every Budget!</p>
         </div><br><br>
         <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -239,7 +282,11 @@
                 </div>
             </div>
         </div>
-    </div><br><br>
+    </div><br><br><br>
+
+
+
+
 
     <!-- Footer Section -->
     <footer class="footer bg_dark_2 text_light_2 py-5">
@@ -314,6 +361,7 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

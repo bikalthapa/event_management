@@ -1,81 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-:root {
-  /* --primary-color: #149e9e; */
-  --primary-color:rgb(240, 75, 75);
-  --secondary-color: #e8e8e8;
-  --text-dark: #0f172a;
-  --text-light: #94a3b8;
-  --white: #ffffff;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: var(--secondary-color);
-}
-
-.section__container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 2rem 1rem;
-  text-align: center;
-  
-}
-
-.section__container h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--primary-color);
-}
-
-.section__container h1 {
-  position: relative;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  font-weight: 600;
-  color: var(--text-dark);
-  margin-top:50px;
-  margin-top: 49px;
-  margin-left: 50vh;
-}
-
-.section__container h1::after {
-  position: absolute;
-  content: "";
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  height: 2px;
-  width: 5rem;
-  background-color: var(--primary-color);
-}
-
-.section__grid {
+.section_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding:100px;
- 
 }
 
-.section__card {
+.section_card {
   position: relative;
   isolation: isolate;
+  display:flex;
+  justify-content:space-between;
+  flex-direction:column;
   overflow: hidden;
   padding: 5rem 2rem 2rem;
-  background-color: var(--white);
+  background-color: var(--dark_2);
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
 
-.section__card::before {
+.section_card::before {
   position: absolute;
   content: "";
   top: 0;
@@ -84,69 +30,74 @@ body {
   width: 75%;
   aspect-ratio: 1;
   border-radius: 100%;
-  background-color: var(--primary-color);
+  background-color: var(--sunset);
   z-index: -1;
   transition: 0.5s;
 }
 
-.section__card span {
+.section_card span {
   position: absolute;
   top: 0;
   left: 0;
   padding: 1rem;
   font-size: 3rem;
-  color: var(--white);
+  color: white;
 }
 
-.section__card h4 {
+.section_card h4 {
   margin-top: 4rem;
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--primary-color);
+  color: var(--sunset);
   transition: 0.3s;
 }
 
-.section__card p {
+.section_card p {
   margin-bottom: 2rem;
-  color: var(--text-light);
+  color: var(--light_1);
+  font-weight:200;
+  text-align:justify;
   transition: 0.3s;
 }
 
-.section__card img {
+.section_card img {
   margin-bottom: 1rem;
   max-width: 100px;
   border-radius: 100%;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--sunset);
   transition: 0.3s;
 }
 
-.section__card h5 {
+.section_card h5 {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--primary-color);
+  color: var(--sunset);
   transition: 0.3s;
 }
 
-.section__card h6 {
+.section_card h6 {
   font-size: 1rem;
   font-weight: 400;
-  color: var(--text-light);
+  color: var(--light_1);
   transition: 0.3s;
 }
 
-.section__card:hover::before {
+.section_card:hover::before {
   width: 400%;
 }
 
-.section__card:hover :is(h4, h5) {
-  color: var(--white);
+.section_card:hover :is(h4, h5) {
+  color: var(--light_4);
 }
 
-.section__card:hover :is(p, h6) {
+.section_card:hover :is(p, h6) {
   color: var(--secondary-color);
 }
 
-.section__card:hover img {
-  border-color: var(--white);
+.section_card:hover img {
+  border-color: var(--light_4);
 }
+
+
+

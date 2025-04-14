@@ -1,4 +1,65 @@
 .aboutus_card{
-    background-color:rgba(var(--dark_2),0.6);
+    background-color:var(--dark_2);
+    box-shadow:var(--shadow_1);
     color:var(--light_1);
+    border:none;
+}
+.aboutus_card .card-text{
+    font-weight:350;
+}
+
+
+/* Leaders Profile Cards  */
+.profile_card{
+    padding:15px;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    border-radius:10px;
+    background-color:var(--dark_2);
+    font-weight:350;
+    box-shadow:var(--shadow_1);
+}
+.profile_card .profile{
+    border-radius:100%;
+    border:2px solid var(--sunset);
+    margin-bottom:10px;
+}
+.profile_card .name, .profile_card .post{
+    text-align:center;
+}
+
+
+
+/* Frequently asked questions */
+.faq-container {
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding: 20px;
+}
+
+.faq-item {
+    background: var(--dark_2);
+    margin-top:30px;
+    padding: 15px;
+    max-width:750px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow:var(--shadow_1);
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    color:var(--light_2);
+    margin: 0;
+}
+
+.faq-item p {
+    font-size: 14px;
+    color:var(--light_2);
+    margin-top: 5px;
+    font-weight:300;
 }

@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "title": "Event Planning & Coordination",
+      "imgSrc": "https://th.bing.com/th/id/R.84c29bedea25f628df80967ba0b3ca12?rik=9NIjswUd1C8LDQ&pid=ImgRaw&r=0",
+      "shortDescription": "Complete end-to-end event planning and flawless coordination for any occasion."
+    },
+    {
+      "id": 2,
+      "title": "Corporate Events",
+      "imgSrc": "https://th.bing.com/th/id/OIP._NWAyD8GuppJX_0g-6sb5AHaEK?rs=1&pid=ImgDetMain",
+      "shortDescription": "Professional management for conferences, product launches, and business gatherings."
+    },
+    {
+      "id": 3,
+      "title": "Weddings & Engagements",
+      "imgSrc": "https://th.bing.com/th/id/R.c3f03a512c48e509e8bea8634cf6378e?rik=5SyLGh%2bYkbfKHw&riu=http%3a%2f%2fwww.grandweddings.co.in%2fwp-content%2fuploads%2f2020%2f01%2fWedding-Event-1170x780.jpg&ehk=Q%2bODPGjrb3Y9kY17BmoH9EzCBXg1xBwXBsmAgIrtfmY%3d&risl=&pid=ImgRaw&r=0",
+      "shortDescription": "Elegant and custom wedding planning to make your day truly unforgettable."
+    },
+    {
+      "id": 4,
+      "title": "Birthday & Private Parties",
+      "imgSrc": "https://th.bing.com/th/id/OIP.3VonG0tWcdYt0DXKRmDGnQHaEi?rs=1&pid=ImgDetMain",
+      "shortDescription": "Fun-filled and personalized party setups for all age groups and occasions."
+    },
+    {
+      "id": 5,
+      "title": "Entertainment & Artist Management",
+      "imgSrc": "https://th.bing.com/th/id/R.c3f03a512c48e509e8bea8634cf6378e?rik=5SyLGh%2bYkbfKHw&riu=http%3a%2f%2fwww.grandweddings.co.in%2fwp-content%2fuploads%2f2020%2f01%2fWedding-Event-1170x780.jpg&ehk=Q%2bODPGjrb3Y9kY17BmoH9EzCBXg1xBwXBsmAgIrtfmY%3d&risl=&pid=ImgRaw&r=0",
+      "shortDescription": "From DJs to celebrity guests, we bring the entertainment that energizes your event."
+    },
+    {
+      "id": 6,
+      "title": "Decor & Theme Design",
+      "imgSrc": "https://th.bing.com/th/id/R.84c29bedea25f628df80967ba0b3ca12?rik=9NIjswUd1C8LDQ&pid=ImgRaw&r=0",
+      "shortDescription": "Creative themes and stunning decor that reflect your vision and elevate your event."
+    },
+    {
+      "id": 7,
+      "title": "Photography & Videography",
+      "imgSrc": "https://th.bing.com/th/id/OIP.3VonG0tWcdYt0DXKRmDGnQHaEi?rs=1&pid=ImgDetMain",
+      "shortDescription": "Capture every beautiful moment with our skilled photographers and videographers."
+    },
+    {
+      "id": 8,
+      "title": "Venue Sourcing & Setup",
+      "imgSrc": "https://th.bing.com/th/id/OIP._NWAyD8GuppJX_0g-6sb5AHaEK?rs=1&pid=ImgDetMain",
+      "shortDescription": "Find the perfect venue and let us take care of all the setup and vendor coordination."
+    },
+    {
+      "id": 9,
+      "title": "Catering & Menu Planning",
+      "imgSrc": "https://th.bing.com/th/id/R.84c29bedea25f628df80967ba0b3ca12?rik=9NIjswUd1C8LDQ&pid=ImgRaw&r=0",
+      "shortDescription": "Delicious menus tailored to your event with top-notch catering service."
+    }
+  ]
+  

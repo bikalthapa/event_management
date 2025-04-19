@@ -5,6 +5,56 @@ document.addEventListener("DOMContentLoaded", function () {
         { id: "eventCount", title: "Events Hosted", value: 5000 },
         { id: "reviewCount", title: "5-Star Reviews", value: 3200 }
     ];
+    const animText = [
+        "corporate events.",
+        "wedding planning.",
+        "birthday celebrations.",
+        "product launches.",
+        "live concerts.",
+        "luxury gala nights.",
+    ];
+
+
+
+
+    let anim = "";
+    let x = 0;
+    let i = 0;
+    let writingMode = true;
+    let animationContainer = document.getElementById("writingAnimation");
+
+    function updateContent() {
+        let writingDelay = 300;
+        let erasingDelay = 90;
+
+        if (i < animText.length) {
+            if (x < animText[i].length && writingMode === true) {
+                anim += animText[i].charAt(x);
+                x++;
+            } else {
+                writingMode = false;
+                if (x >= 0) {
+                    anim = anim.substring(0, x);
+                    x--;
+                } else {
+                    x = 0;
+                    anim = "";
+                    i++;
+                    writingMode = true;
+                }
+            }
+        } else {
+            i = 0;
+        }
+
+        animationContainer.innerHTML = "We specialize in "+anim;
+
+        setTimeout(updateContent, writingMode ? writingDelay : erasingDelay);
+    }
+    updateContent(); // Start the animation
+
+
+
 
     // Get the container
     const counterSection = document.getElementById("counterSection");

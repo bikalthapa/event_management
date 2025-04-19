@@ -58,14 +58,15 @@
 
     <!-- Hero Section -->
     <section class="hero_section">
-        <div class="card text-bg-dark">
+        <div class="card text-bg-dark" data-aos="zoom-out">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
                 <div class="card-img-overlay hero_section_overlay">
-                    <h5 class="card-title title">Creating Unforgettable Experiences</h5>
+                    <h5 class="card-title title" id="writingAnimation"></h5>
                     <p class="card-text subtitle">
-                        We specialize in planning and executing events that leave a lasting impression. From corporate
-                        gatherings to weddings, we’ve got you covered.
+                        Sit back and relax — we take care of everything, from planning to execution, with creativity and
+                        precision.
                     </p>
+
                     <button class="CTA_solid">About Us</button>
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -98,14 +99,14 @@
 
 
     <!-- Our Services  -->
-    <section class="container">
+    <section class="container" data-aos="zoom-out">
         <div class="section">
             <h1 class="section_title">Our Services</h1>
             <p class="section_description">Explore Our Services</p>
         </div>
         <br><br>
         <div class="row row-cols-1 row-cols-md-2 g-5">
-            <div class="col" data-aos="zoom-in">
+            <div class="col">
                 <div class="card service_cards">
                     <img src="https://websitedemos.net/event-management-04/wp-content/uploads/sites/638/2020/07/event-service-3.jpg"
                         class="card-img-top" alt="...">
@@ -116,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col" data-aos="zoom-in">
+            <div class="col">
                 <div class="card service_cards">
                     <img src="https://websitedemos.net/event-management-04/wp-content/uploads/sites/638/2020/07/event-service-3.jpg"
                         class="card-img-top" alt="...">
@@ -127,7 +128,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col" data-aos="zoom-in">
+            <div class="col">
                 <div class="card service_cards">
                     <img src="https://websitedemos.net/event-management-04/wp-content/uploads/sites/638/2020/07/event-service-3.jpg"
                         class="card-img-top" alt="...">
@@ -138,7 +139,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col" data-aos="zoom-in">
+            <div class="col">
                 <div class="card service_cards">
                     <img src="https://websitedemos.net/event-management-04/wp-content/uploads/sites/638/2020/07/event-service-3.jpg"
                         class="card-img-top" alt="...">
@@ -164,13 +165,99 @@
     </section><br><br><br>
 
 
-    <!-- Counter Container -->
-    <section class="container">
-        <div id="counterSection" class="row row-cols-1 row-cols-md-3 g-4"></div>
+    <!-- Skills Section -->
+    <section class="container my-5" data-aos="zoom-out" >
+        <div class="section">
+            <h1 class="section_title">Our Skills</h1>
+            <p class="section_description">Expertise that brings your events to life.</p>
+        </div><br><br>
+
+        <div class="row g-4 skills_container">
+            <div class="col-md-6">
+                <div class="skills_card">
+                    <div class="d-flex justify-content-between">
+                        <strong class="skill_title">Event Planning & Coordination</strong>
+                        <span class="skill_value">95%</span>
+                    </div>
+                    <div class="progress mt-2" style="height: 8px;">
+                        <div class="progress-bar bg-danger" style="width: 95%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="skills_card">
+                    <div class="d-flex justify-content-between">
+                        <strong class="skill_title">Vendor Management</strong>
+                        <span class="skill_value">90%</span>
+                    </div>
+                    <div class="progress mt-2" style="height: 8px;">
+                        <div class="progress-bar bg-danger" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="skills_card">
+                    <div class="d-flex justify-content-between">
+                        <strong class="skill_title">Creative Design & Decor</strong>
+                        <span class="skill_value">85%</span>
+                    </div>
+                    <div class="progress mt-2" style="height: 8px;">
+                        <div class="progress-bar bg-danger" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="skills_card">
+                    <div class="d-flex justify-content-between">
+                        <strong class="skill_title">Client Communication</strong>
+                        <span class="skill_value">92%</span>
+                    </div>
+                    <div class="progress mt-2" style="height: 8px;">
+                        <div class="progress-bar bg-danger" style="width: 92%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="skills_card">
+                    <div class="d-flex justify-content-between">
+                        <strong class="skill_title">Budgeting & Logistics</strong>
+                        <span class="skill_value">88%</span>
+                    </div>
+                    <div class="progress mt-2" style="height: 8px;">
+                        <div class="progress-bar bg-danger" style="width: 88%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ✅ New Skill Added -->
+            <div class="col-md-6">
+                <div class="skills_card">
+                    <div class="d-flex justify-content-between">
+                        <strong class="skill_title">On-Site Management</strong>
+                        <span class="skill_value">93%</span>
+                    </div>
+                    <div class="progress mt-2" style="height: 8px;">
+                        <div class="progress-bar bg-danger" style="width: 93%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <!-- Counter Container -->
+        <section class="container">
+            <div id="counterSection" class="row row-cols-1 row-cols-md-3 g-4"></div>
+        </section>
     </section><br><br><br>
 
+
+
+
+
     <!-- Testimonials Section  -->
-    <section class="container">
+    <section class="container" data-aos="zoom-out">
         <div class="section">
             <h1 class="section_title">Testimonials</h1>
             <p class="section_description">Review From Our Clients</p>
@@ -221,7 +308,7 @@
 
 
     <!-- Pricing Section -->
-    <div class="container">
+    <div class="container" data-aos="zoom-out">
         <div class="section">
             <h1 class="section_title">Pricing & Plan</h1>
             <p class="section_description">Affordable Plans for Every Budget!</p>
@@ -295,11 +382,13 @@
                 <!-- Contact Info Section -->
                 <div class="col-md-4">
                     <h5>Contact Info</h5>
-                    <p class="contact_info"><span class="title">Phone:</span><span class="value"> 123-456-7890</span>
+                    <p class="contact_info"><span class="title">Phone: </span><span class="value" id="phoneNumber">
+                            123-456-7890</span>
                     </p>
-                    <p class="contact_info"><span class="title">Email:</span><span class="value">
+                    <p class="contact_info"><span class="title">Email: </span><span class="value" id="email">
                             info@youreventsite.com</span></p>
-                    <p class="contact_info"><span class="title">Address:</span><span class="value">123 Event St, City,
+                    <p class="contact_info"><span class="title">Address: </span><span class="value" id="address">123
+                            Event St, City,
                             Country</span></p>
                 </div>
 
@@ -320,7 +409,7 @@
                     <h5>Get in Touch</h5>
                     <section class="social_media">
                         <div class="container">
-                            <div class="social_links">
+                            <div class="social_links" id="social_links">
                                 <a href="https://facebook.com" target="_blank">
                                     <img src="./assets/icons/facebook.png" alt="Facebook">
                                 </a>

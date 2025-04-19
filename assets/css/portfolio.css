@@ -8,6 +8,9 @@
 }
 .portfolio_section .card{
     height:100%;
+    border:none;
+    border-radius:10px;
+    box-shadow:var(--shadow_1);
 }
 .portfolio_section .card .card-body{
     display:flex;
@@ -33,23 +36,3 @@
 
 
 
-/* Design for portfolio modal */
-.portfolio_modal{
-    background-color:rgba(var(--dark_trans_1),0.5);
-    backdrop-filter: blur(5px);
-    border:1px solid var(--light_1);
-}
-.portfolio_modal .card-body, .portfolio_modal .card{
-    background-color:transparent;
-    color:var(--light_1);
-    border:none;
-    text-align:justify;
-}
-.portfolio_modal .portfolio-header{
-    color:var(--light_1);
-}
-.portfolio_modal .close_btn{
-    color:var(--light_1);
-    background-color:transparent;
-    border:none;
-}

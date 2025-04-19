@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -57,138 +57,161 @@
     </header>
     <br><br><br><br><br>
 
+
+
+
+    <!-- Service Section  -->
     <div class="container">
         <div data-aos="zoom-out">
-        <div class="section">
-            <h1 class="section_title">Our Services</h1>
-            <p class="section_description">Explore Our Services</p>
-        </div>
-        <div class="row mt-5 row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="image-box">
-                    <img src="https://th.bing.com/th/id/OIP.lu6kvZ2qZ8vsQhXE56Lz2AAAAA?w=303&h=180&c=7&r=0&o=5&pid=1.7"
-                        alt="Birthday">
-                    <div class="overlay">
-                        <h3>Birthday Party</h3>
-                        <p>Fun-filled birthday celebration decoration.</p>
+            <div class="section">
+                <h1 class="section_title">Our Services</h1>
+                <p class="section_description">We turn your vision into unforgettable experiences.</p>
+            </div>
+            <div class="row mt-5 row-cols-1 row-cols-md-3 g-4" id="servicesContainer">
+                <div class="col">
+                    <div class="placeholder-box image-box d-flex justify-content-center align-items-center">
+                        <div class="placeholder-line long"></div>
+                        <div class="placeholder-line medium"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="placeholder-box image-box d-flex justify-content-center align-items-center">
+                        <div class="placeholder-line long"></div>
+                        <div class="placeholder-line medium"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="placeholder-box image-box d-flex justify-content-center align-items-center">
+                        <div class="placeholder-line long"></div>
+                        <div class="placeholder-line medium"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="placeholder-box image-box d-flex justify-content-center align-items-center">
+                        <div class="placeholder-line long"></div>
+                        <div class="placeholder-line medium"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="placeholder-box image-box d-flex justify-content-center align-items-center">
+                        <div class="placeholder-line long"></div>
+                        <div class="placeholder-line medium"></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="placeholder-box image-box d-flex justify-content-center align-items-center">
+                        <div class="placeholder-line long"></div>
+                        <div class="placeholder-line medium"></div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div><br><br><br>
 
-            <div class="col">
-                <div class="image-box">
-                    <img src="https://th.bing.com/th/id/OIP.kpXPe0WeneNhNr9IFWiu0QHaEC?w=294&h=180&c=7&r=0&o=5&pid=1.7"
-                        alt="Corporate">
-                    <div class="overlay">
-                        <h3>Corporate Events</h3>
-                        <p>Professional corporate event planning.</p>
-                    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content portfolio_modal">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modal_title">Our Portfolio</h1>
+                    <button type="button" class="ms-auto close_btn" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal_body">
+                    <!-- Your updated service list -->
+                </div>
+                <div class="modal-footer">
+                    <!-- This will allow dynamic JS footer injection -->
                 </div>
             </div>
-            <div class="col">
-                <div class="image-box">
-                    <img src="https://th.bing.com/th/id/OIP.bcuTBMgb8_2AS1-caZ8USgHaHa?w=184&h=184&c=7&r=0&o=5&pid=1.7"
-                        alt="Baby Shower">
-                    <div class="overlay">
-                        <h3>Baby Shower</h3>
-                        <p>Celebrate new beginnings with special decor.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="image-box">
-                    <img src="https://ts3.mm.bing.net/th?id=OIP.MsVDJekayVymHTmH_GkSlwHaE8&pid=15.1" alt="Anniversary">
-                    <div class="overlay">
-                        <h3>Mehendi Celebration</h3>
-                        <p>Create unforgettable Mehendi vibes.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="image-box">
-                    <img src="https://th.bing.com/th/id/OIP.iZ4ZkP2nEiHm1f8Y_jJMqAHaEc?w=279&h=180&c=7&r=0&o=5&pid=1.7"
-                        alt="Anniversary">
-                    <div class="overlay">
-                        <h3>Destination Weeding</h3>
-                        <p>Perfect Tents for your Dream Weddings!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="image-box">
-                    <img src="https://th.bing.com/th/id/OIP.iwTlnZW84c5WX6FiOpKOcQHaE4?w=292&h=192&c=7&r=0&o=5&pid=1.7"
-                        alt="Cultural Events">
-                    <div class="overlay">
-                        <h3>Rice Feeding</h3>
-                        <p>Traditional and cultural festivities.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="image-box">
-                    <img src="https://ts1.mm.bing.net/th?id=OIP.FyK3_Qf7w2FEoBGt2dVXugHaE6&pid=15.1"
-                        alt="Cultural Events">
-                    <div class="overlay">
-                        <h3>Programs</h3>
-                        <p>Quality Tents for Every Special Event!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="image-box">
-                    <img src="https://th.bing.com/th/id/OIP.WyK0jfr_dCaf356xEj8l4AHaEK?w=317&h=180&c=7&r=0&o=5&pid=1.7" alt="Cultural Events">
-                    <div class="overlay">
-                        <h3>House decoration</h3>
-                        <p>For traditional and parties event.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="image-box">
-                    <img src="https://th.bing.com/th/id/OIP.HEosyihkrsa0I9BfbM4jpAAAAA?w=137&h=180&c=7&r=0&o=5&pid=1.7" alt="Cultural Events">
-                    <div class="overlay">
-                        <h3>Rental services</h3>
-                        <p>Rent chairs,tables and catering .</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="image-box">
-                    <img src="https://th.bing.com/th/id/OIP.eu3xifLgm8IW2xNJyU7ekgHaEK?w=289&h=185&c=7&r=0&o=5&pid=1.7" alt="Cultural Events">
-                    <div class="overlay">
-                        <h3>Food services</h3>
-                        <p>Amazing and delecious food services.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="image-box">
-                    <img src="https://i.ytimg.com/vi/EBzsJajYB5E/maxresdefault.jpg" alt="Cultural Events">
-                    <div class="overlay">
-                        <h3>Tent services</h3>
-                        <p>Beautiful tents for beautiful memories.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="image-box">
-                    <img src="https://th.bing.com/th/id/OIP.kWuE7re4506LW6wQecCpTQHaGB?w=198&h=180&c=7&r=0&o=5&pid=1.7"
-                        alt="Cultural Events">
-                    <div class="overlay">
-                        <h3>Vehicle Decoration</h3>
-            <p>Elegant vehicle decorations for your grand arrival.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
         </div>
     </div>
 
+
+    <!-- Footer Section -->
+    <footer class="footer bg_dark_2 text_light_2 py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Info Section -->
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <p class="contact_info"><span class="title">Phone: </span><span class="value" id="phoneNumber">
+                            123-456-7890</span>
+                    </p>
+                    <p class="contact_info"><span class="title">Email: </span><span class="value" id="email">
+                            info@youreventsite.com</span></p>
+                    <p class="contact_info"><span class="title">Address: </span><span class="value" id="address">123
+                            Event St, City,
+                            Country</span></p>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled quick_links">
+                        <li><a href="./index.html" class="link_item">Home</a></li>
+                        <li><a href="./about_us.html" class="link_item">About Us</a></li>
+                        <li><a href="./services.html" class="link_item">Our Services</a></li>
+                        <li><a href="./portfolio.html" class="link_item">Portfolio</a></li>
+                        <li><a href="./contact.html" class="link_item">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Call to Action Section -->
+                <div class="col-md-4">
+                    <h5>Get in Touch</h5>
+                    <section class="social_media">
+                        <div class="container">
+                            <div class="social_links" id="social_links">
+                                <a href="https://facebook.com" target="_blank">
+                                    <img src="./assets/icons/facebook.png" alt="Facebook">
+                                </a>
+                                <a href="https://instagram.com" target="_blank">
+                                    <img src="./assets/icons/whatsapp.png" alt="Instagram">
+                                </a>
+                                <a href="https://wa.me/yourphonenumber" target="_blank">
+                                    <img src="./assets/icons/insta.png" alt="WhatsApp">
+                                </a>
+                                <a href="https://twitter.com" target="_blank">
+                                    <img src="./assets/icons/twitter.png">
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+            <!-- Legal Section -->
+            <div class="row mt-4">
+                <div class="col-md-12 text-center copyright">
+                    <p>&copy; 2025 Your Event Management. All rights reserved.</p>
+                    <p>
+                        <a href="/privacy-policy" class="legal_item">Privacy Policy</a> |
+                        <a href="/terms-conditions" class="legal_item">Terms & Conditions</a>
+                    </p>
+                    <p>
+                        Developed by
+                        <a href="https://www.developerwebsite.com" class="developer" target="_blank">Tech BARSA</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/service.js"></script>
 </body>
 
 </html>

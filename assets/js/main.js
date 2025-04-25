@@ -58,8 +58,6 @@ class DataFetcher {
                 return response.json();
             })
             .then(data => {
-                // Clear the lazy loading spinner or message
-                this.container.innerHTML = '';
                 // Call the success callback with the fetched data
                 if (typeof onSuccess === 'function') {
                     onSuccess(data);
@@ -81,20 +79,36 @@ class DataFetcher {
 AOS.init();
 
 // Toggling between dark and light mode
-let theme_toggler = document.getElementById("theme_toggler");
-let img = document.getElementById("theme_icon");
-let curr_theme = "dark";
-theme_toggler.addEventListener("click", () => {
-    if (curr_theme == "dark") {
-        curr_theme = "light";
-        img.src = "assets/icons/dark_mode.svg";
-        document.body.classList.add("light-mode");
-    } else {
-        curr_theme = "dark";
-        img.src = "assets/icons/light_mode.svg";
-        document.body.classList.remove("light-mode");
+document.addEventListener("DOMContentLoaded", () => {
+    let theme_toggler = document.getElementById("theme_toggler");
+    let img = document.getElementById("theme_icon");
+
+    // Detect user's preferred scheme on first load
+    let userPref = localStorage.getItem("theme");
+    if (!userPref) {
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        userPref = prefersDark ? "dark" : "light";
+    }
+
+    applyTheme(userPref);
+
+    theme_toggler.addEventListener("click", () => {
+        const newTheme = document.body.classList.contains("light-mode") ? "dark" : "light";
+        localStorage.setItem("theme", newTheme);
+        applyTheme(newTheme);
+    });
+
+    function applyTheme(theme) {
+        if (theme === "light") {
+            img.src = "assets/icons/dark_mode.svg";
+            document.body.classList.add("light-mode");
+        } else {
+            img.src = "assets/icons/light_mode.svg";
+            document.body.classList.remove("light-mode");
+        }
     }
 });
+
 
 
 

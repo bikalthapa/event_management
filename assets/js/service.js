@@ -8,6 +8,7 @@ var servicesData;
 const renderServices = (services) => {
     const container = document.getElementById('servicesContainer');
     servicesData = services;
+    container.innerHTML = "";
     services.forEach((service, indx) => {
         servicesData[indx].id = indx;
         const serviceCard = `

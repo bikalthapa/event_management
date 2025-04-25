@@ -3,56 +3,30 @@
 :root {
     --sunset: rgb(240, 75, 75);
 
-    --shadow_1:5px 5px 10px rgba(0, 0, 0, 0.1);
+    --shadow_1: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-color-scheme:dark) {
-    :root {
-        --dark_1: #212529;
-        --dark_2: #343a40;
-        --dark_3: #495057;
-        --dark_4: #6c757d;
+body:not(.light-mode) {
+    --dark_1: #212529;
+    --dark_2: #343a40;
+    --dark_3: #495057;
+    --dark_4: #6c757d;
 
-        --light_1: #edf2fb;
-        --light_2: #e2eafc;
-        --light_3: #d7e3fc;
-        --light_4: #ccdbfd;
+    --light_1: #edf2fb;
+    --light_2: #e2eafc;
+    --light_3: #d7e3fc;
+    --light_4: #ccdbfd;
 
-        /* Transparent versions */
-        --dark_trans_1: 33, 37, 41;
-        --dark_trans_2: 52, 58, 64;
-        --dark_trans_3: 73, 80, 87;
-        --dark_trans_4: 108, 117, 125;
+    /* Transparent versions */
+    --dark_trans_1: 33, 37, 41;
+    --dark_trans_2: 52, 58, 64;
+    --dark_trans_3: 73, 80, 87;
+    --dark_trans_4: 108, 117, 125;
 
-        --light_trans_1: 237, 242, 251;
-        --light_trans_2: 226, 234, 252;
-        --light_trans_3: 215, 227, 252;
-        --light_trans_4: 204, 219, 253;
-    }
-}
-
-@media(prefers-color-scheme:light) {
-    :root {
-        --dark_1: #edf2fb;
-        --dark_2: #e2eafc;
-        --dark_3: #d7e3fc;
-        --dark_4: #ccdbfd;
-
-        --light_1: #212529;
-        --light_2: #343a40;
-        --light_3: #495057;
-        --light_4: #6c757d;
-
-        --dark_trans_1: 237, 242, 251;
-        --dark_trans_2: 226, 234, 252;
-        --dark_trans_3: 215, 227, 252;
-        --dark_trans_4: 204, 219, 253;
-
-        --light_trans_1: 33, 37, 41;
-        --light_trans_2: 52, 58, 64;
-        --light_trans_3: 73, 80, 87;
-        --light_trans_4: 108, 117, 125;
-    }
+    --light_trans_1: 237, 242, 251;
+    --light_trans_2: 226, 234, 252;
+    --light_trans_3: 215, 227, 252;
+    --light_trans_4: 204, 219, 253;
 }
 
 body.light-mode {
@@ -77,6 +51,7 @@ body.light-mode {
     --light_trans_4: 108, 117, 125;
 }
 
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
@@ -85,7 +60,7 @@ body {
     color: var(--light_1);
     height: 100vh;
     scroll-behavior: smooth;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 .header {
@@ -200,15 +175,18 @@ body {
 }
 
 
-.footer .contact_info .title{
+.footer .contact_info .title {
     font-weight: 450;
 }
-.footer .contact_info .value{
-    font-weight:300;
+
+.footer .contact_info .value {
+    font-weight: 300;
 }
-.footer .quick_links .link_item, .footer .copyright{
-    text-decoration:none;
-    font-weight:300;
+
+.footer .quick_links .link_item,
+.footer .copyright {
+    text-decoration: none;
+    font-weight: 300;
 }
 
 /* Social Media Styles */
@@ -231,24 +209,28 @@ body {
 
 
 /* Design for portfolio modal */
-.portfolio_modal{
-    background-color:rgba(var(--dark_trans_1),0.7);
+.portfolio_modal {
+    background-color: rgba(var(--dark_trans_1), 0.7);
     backdrop-filter: blur(5px);
-    border:1px solid var(--light_1);
+    border: 1px solid var(--light_1);
 }
-.portfolio_modal .card-body, .portfolio_modal .card{
-    background-color:transparent;
-    color:var(--light_1);
-    border:none;
-    text-align:justify;
+
+.portfolio_modal .card-body,
+.portfolio_modal .card {
+    background-color: transparent;
+    color: var(--light_1);
+    border: none;
+    text-align: justify;
 }
-.portfolio_modal .portfolio-header{
-    color:var(--light_1);
+
+.portfolio_modal .portfolio-header {
+    color: var(--light_1);
 }
-.portfolio_modal .close_btn{
-    color:var(--light_1);
-    background-color:transparent;
-    border:none;
+
+.portfolio_modal .close_btn {
+    color: var(--light_1);
+    background-color: transparent;
+    border: none;
 }
 
 
@@ -271,6 +253,16 @@ body {
 /* Image section */
 .placeholder-image {
     height: 150px;
+    border-radius: 8px;
+    animation: pulse 2s infinite ease-in-out;
+}
+.placeholder-image-mini {
+    height: 100px;
+    border-radius: 8px;
+    animation: pulse 2s infinite ease-in-out;
+}
+.placeholder-btn {
+    height: 40px;
     border-radius: 8px;
     animation: pulse 2s infinite ease-in-out;
 }
@@ -299,17 +291,21 @@ body {
     0% {
         background-color: var(--dark_1);
     }
-    25%{
-        background-color:var(--dark_2);
+
+    25% {
+        background-color: var(--dark_2);
     }
+
     50% {
         background-color: var(--dark_3);
     }
+
     75% {
         background-color: var(--dark_4);
     }
-    100%{
-        background-color:var(--dark_1);
+
+    100% {
+        background-color: var(--dark_1);
     }
 }
 

@@ -1,85 +1,105 @@
 {
-    "portfolio": [
-      {
-        "title": "Tent Rental Services at National Level Tech fest Purbanchal Campus 🎪",
-        "image": "https://cdn0.weddingwire.in/vendor/3899/3_2/640/jpg/marriage-garden-arony-hospitality-wedding-decor-20_15_323899-159574898459680.jpeg",
-        "date": "August 7, 2025",
-        "location": "Biratnagar, Nepal",
-        "description": [
-          "✅ Provided quality tent service for a political program in Letang-05, Morang.",
-          "✅ Offered affordable and relevant pricing for the community event.",
-          "✅ Ensured proper setup and seating arrangements for smooth program flow.",
-          "✅ Contributed to a successful and well-organized political gathering.",
-          "✅ Delivered on-time service with professional support throughout the event.",
-          "✅ Helped create a safe and comfortable environment for all attendees."
-        ]
-      },
-      {
-        "title": "Catering Service 🍽️",
-        "image": "https://www.rcc.edu/images/facilities/cafeteria/Catering_iStock-650655146_A-lg.jpg",
-        "date": "August 8, 2025",
-        "location": "Letang Municipality",
-        "description": [
-          "✅ Successfully provided high-quality rental tents for the Delta 5.0 Tech & Innovation Program.",
-          "✅ Delivered professional catering services with delicious food for all event guests and participants.",
-          "✅ Helped create a comfortable and organized event space with proper seating and dining arrangements.",
-          "✅ Supported the community by ensuring a smooth and memorable event experience.",
-          "✅ Contributed to one of the region's biggest tech and innovation programs with our reliable event solutions."
-        ]
-      },
-      {
-        "title": "Marriage Ceremony 💑 at damak",
-        "image": "https://image.wedmegood.com/resized/800X/uploads/project/12727/1486663833_image9239.jpg",
-        "date": "August 10 2025",
-        "location": "Damak",
-        "description": [
-          "✅ Provided tent and catering services for a marriage ceremony in Damak-3.",
-          "✅ Offered affordable and budget-friendly packages for the special event.",
-          "✅ Ensured beautiful decoration and comfortable seating arrangements.",
-          "✅ Made the event memorable with delicious food and quality service.",
-          "✅ Delivered on-time setup and smooth service throughout the celebration.",
-          "✅ Helped create a joyful and well-organized environment for guests and family."
-        ]
-      },
-      {
-        "title": "Bratabandha Ceremony",
-        "image": "https://i.pinimg.com/originals/3c/7e/4a/3c7e4ac9910a3731619552a582229b11.jpg",
-        "date": null,
-        "location": null,
-        "description": [
-          "✅ Provided tent and catering services for a Bratabandha ceremony in Biratnagar.",
-          "✅ Offered affordable and customized packages as per family needs.",
-          "✅ Ensured beautiful tent decoration and proper seating for guests.",
-          "✅ Served delicious and hygienic food with professional catering staff.",
-          "✅ Managed timely setup and smooth service throughout the event."
-        ]
-      },
-      {
-        "title": "Guneu-Choli Ceremony 🎀",
-        "image": "https://i.pinimg.com/originals/3c/7e/4a/3c7e4ac9910a3731619552a582229b11.jpg",
-        "date": null,
-        "location": null,
-        "description": [
-          "✅ Offered affordable and family-friendly packages for this special occasion.",
-          "✅ Arranged beautiful and colorful tent decoration suitable for the cultural event.",
-          "✅ Served delicious and hygienic food for all family members and guests.",
-          "✅ Ensured comfortable seating and smooth service throughout the ceremony.",
-          "✅ Helped make the traditional ceremony joyful and memorable for the family."
-        ]
-      },
-      {
-        "title": "Guneu-Choli Ceremony 🎀",
-        "image": "https://i.pinimg.com/originals/3c/7e/4a/3c7e4ac9910a3731619552a582229b11.jpg",
-        "date": null,
-        "location": null,
-        "description": [
-          "✅ Offered affordable and family-friendly packages for this special occasion.",
-          "✅ Arranged beautiful and colorful tent decoration suitable for the cultural event.",
-          "✅ Served delicious and hygienic food for all family members and guests.",
-          "✅ Ensured comfortable seating and smooth service throughout the ceremony.",
-          "✅ Helped make the traditional ceremony joyful and memorable for the family."
-        ]
-      }
-    ]
-  }
-  
+  "portfolio": [
+    {
+      "title": "National Tech Fest Tent & Catering Services 🎪🍽️",
+      "image": "https://cdn0.weddingwire.in/vendor/3899/3_2/640/jpg/marriage-garden-arony-hospitality-wedding-decor-20_15_323899-159574898459680.jpeg",
+      "date": "August 7, 2025",
+      "location": "Purbanchal Campus, Biratnagar",
+      "description": [
+        "✅ Provided premium tents and seating for over 1,500 participants.",
+        "✅ Delivered professional catering with multi-cuisine meals.",
+        "✅ Supported event logistics, stage setup, and decoration.",
+        "✅ Ensured VIP lounge setup with special arrangements."
+      ]
+    },
+    {
+      "title": "Political Program Setup 🇳🇵",
+      "image": "https://www.coventry.ac.uk/globalassets/media/global/00-new-course-imagery/business-and-law/ug/event-management-v2-1920x1080.jpg",
+      "date": "August 8, 2025",
+      "location": "Letang-05, Morang",
+      "description": [
+        "✅ Organized tenting, sound systems, and stage decor.",
+        "✅ Managed crowd control barriers and safe seating.",
+        "✅ Delivered emergency services coordination support."
+      ]
+    },
+    {
+      "title": "Destination Wedding Ceremony 💍",
+      "image": "https://image.wedmegood.com/resized/800X/uploads/project/12727/1486663833_image9239.jpg",
+      "date": "October 12, 2025",
+      "location": "Pokhara, Nepal",
+      "description": [
+        "✅ Full wedding decor, floral arrangements, and tent setup.",
+        "✅ Managed traditional rituals, mandap design, and catering.",
+        "✅ Organized entertainment: live band and DJ services.",
+        "✅ Provided luxury guest accommodation assistance."
+      ]
+    },
+    {
+      "title": "Corporate Annual Gala Night 🎤🏆",
+      "image": "https://www.rcc.edu/images/facilities/cafeteria/Catering_iStock-650655146_A-lg.jpg",
+      "date": "November 18, 2025",
+      "location": "Kathmandu Marriott Hotel",
+      "description": [
+        "✅ Full event management for 300+ corporate attendees.",
+        "✅ Award ceremony stage, LED walls, and technical setups.",
+        "✅ 5-star catering, cocktail arrangements, and artist management."
+      ]
+    },
+    {
+      "title": "Bratabandha Ceremony Celebration 🧡",
+      "image": "https://i.pinimg.com/originals/3c/7e/4a/3c7e4ac9910a3731619552a582229b11.jpg",
+      "date": "September 15, 2025",
+      "location": "Biratnagar",
+      "description": [
+        "✅ Designed colorful, traditional tent setups for the occasion.",
+        "✅ Provided customized vegetarian catering menu.",
+        "✅ Organized cultural performances for family entertainment."
+      ]
+    },
+    {
+      "title": "Guneu-Choli Ceremony 🎀",
+      "image": "https://i.pinimg.com/originals/3c/7e/4a/3c7e4ac9910a3731619552a582229b11.jpg",
+      "date": "September 20, 2025",
+      "location": "Dharan",
+      "description": [
+        "✅ Beautiful pastel theme decoration matching the tradition.",
+        "✅ Arranged kids’ entertainment activities and photo booth.",
+        "✅ Delivered hygienic food catering and gift hampers."
+      ]
+    },
+    {
+      "title": "College Farewell Party 🎓",
+      "image": "https://th.bing.com/th/id/R.3e68f5887e8c66fbdc988ab8e0228b98?rik=bX8%2fY2XsZfZD0A&pid=ImgRaw&r=0",
+      "date": "March 5, 2025",
+      "location": "Itahari",
+      "description": [
+        "✅ Event setup including tenting, lighting, and DJ sound system.",
+        "✅ Full photo & video coverage including drone shots.",
+        "✅ Themed decor based on 'Starry Night' farewell theme."
+      ]
+    },
+    {
+      "title": "Product Launch Event 🚀",
+      "image": "https://www.adtonos.com/wp-content/uploads/2022/11/1-copy-1.jpg",
+      "date": "May 10, 2025",
+      "location": "Kathmandu",
+      "description": [
+        "✅ Complete branding and backdrop designs.",
+        "✅ Invited media houses and managed PR coverage.",
+        "✅ Provided light snacks, beverages, and personalized gifts."
+      ]
+    },
+    {
+      "title": "Charity Fundraiser Concert 🎶",
+      "image": "https://images.unsplash.com/photo-1509099836639-18ba1795216d",
+      "date": "July 23, 2025",
+      "location": "Jhapa",
+      "description": [
+        "✅ Full concert management with top Nepali artists.",
+        "✅ Sound, light, stage setup, and ticketing system.",
+        "✅ Coordinated food stalls and merchandising booths."
+      ]
+    }
+  ]
+}

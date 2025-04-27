@@ -1,225 +1,225 @@
-//A code for service page
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/portfolio.css">
-    <link rel="icon" href="assets/images/logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modern Hover Effects</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Basic Card Styling */
+    .card {
+      min-width: 250px;
+      max-width: 300px;
+      min-height: 200px;
+      max-height: 300px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 12px;
+      background: #fff;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    /* Hover Effect Classes */
+    .hover-lift:hover { transform: translateY(-10px); box-shadow: 0 12px 24px rgba(0,0,0,0.2); }
+    .hover-scale:hover { transform: scale(1.05); }
+    .hover-scale-down:hover { transform: scale(0.95); }
+    .hover-rotate:hover { transform: rotate(3deg); }
+    .hover-skew:hover { transform: skew(-5deg, -5deg); }
+    .hover-glow:hover { box-shadow: 0 0 15px 5px rgba(0,200,255,0.6); }
+    .hover-inner-shadow:hover { box-shadow: inset 0 0 10px rgba(0,0,0,0.5); }
+
+    .hover-border-grow {
+      position: relative;
+      overflow: hidden;
+    }
+    .hover-border-grow::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 2px solid #00f;
+      transform: scale(0);
+      transition: transform 0.3s ease;
+    }
+    .hover-border-grow:hover::after {
+      transform: scale(1);
+    }
+
+    .hover-overlay {
+      position: relative;
+      overflow: hidden;
+    }
+    .hover-overlay::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .hover-overlay:hover::after {
+      opacity: 1;
+    }
+
+    .hover-bg-zoom {
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: background-size 0.5s;
+    }
+    .hover-bg-zoom:hover {
+      background-size: 120%;
+    }
+
+    .hover-flip-y:hover { transform: rotateY(180deg); }
+    .hover-flip-x:hover { transform: rotateX(180deg); }
+
+    .hover-glass {
+      backdrop-filter: blur(0px);
+      transition: backdrop-filter 0.4s ease;
+    }
+    .hover-glass:hover {
+      backdrop-filter: blur(10px);
+    }
+
+    .hover-zoom-lift:hover {
+      transform: scale(1.05) translateY(-5px);
+    }
+
+    .hover-color-shift {
+      background: linear-gradient(45deg, #ff6ec4, #7873f5);
+      background-size: 400% 400%;
+      transition: background-position 0.5s;
+    }
+    .hover-color-shift:hover {
+      background-position: right center;
+    }
+
+    .hover-opacity:hover { opacity: 0.7; }
+
+    .hover-slide-content {
+      position: relative;
+      overflow: hidden;
+    }
+    .hover-slide-content .slide-text {
+      position: absolute;
+      bottom: -100%;
+      width: 100%;
+      text-align: center;
+      transition: bottom 0.3s ease;
+      padding: 10px;
+      background: rgba(255,255,255,0.9);
+    }
+    .hover-slide-content:hover .slide-text {
+      bottom: 0;
+    }
+
+    .hover-gradient-border {
+      position: relative;
+      background: white;
+      z-index: 1;
+    }
+    .hover-gradient-border::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      padding: 2px;
+      background: linear-gradient(45deg, #f093fb, #f5576c);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+      z-index: -1;
+      transition: opacity 0.3s;
+      opacity: 0;
+    }
+    .hover-gradient-border:hover::before {
+      opacity: 1;
+    }
+
+    .hover-tilt {
+      transition: transform 0.2s;
+    }
+    .hover-tilt:hover {
+      transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+    }
+
+    .hover-shine {
+      position: relative;
+      overflow: hidden;
+    }
+    .hover-shine::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(120deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.1) 100%);
+      transform: rotate(25deg) translate(-100%, 0);
+      transition: transform 0.5s;
+    }
+    .hover-shine:hover::after {
+      transform: rotate(25deg) translate(100%, 0);
+    }
+
+    .hover-radius-morph {
+      transition: border-radius 0.3s;
+    }
+    .hover-radius-morph:hover {
+      border-radius: 50px;
+    }
+  </style>
 </head>
 
-<body>
-    <!-- Navbar -->
-    <header class="header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo.png" class="navbar_logo" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse  navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav d-flex justify-content-end w-100 gap-4 text-center fs-6 fs-bold">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blogs.html">Blogs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active_nav" aria-current="page" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about_us.html">About Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <button class="theme_toggler" id="theme_toggler">
-            <img src="assets/icons/light_mode.svg" id="theme_icon" />
-        </button>
-    </header> <br><br><br><br><br>
+<body class="bg-light">
 
+  <div class="container py-5">
+    <div class="row g-4">
 
-
-
-
-    <!-- Portfolio Section -->
-    <span class="border">
-        <div class="row row-cols-1 row-cols-md-3 g-4 ms-5 me-5 md-5 border-secondary">
-            <div class="col">
-                <div class="card">
-                    <img src="https://cdn0.weddingwire.in/vendor/3899/3_2/640/jpg/marriage-garden-arony-hospitality-wedding-decor-20_15_323899-159574898459680.jpeg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">&nbsp;🎪 Tent Rental Services <br>
-                            <h5 class="mt-3 ml-4 text-secondary">
-                            </h5>
-                        </h3>
-                        <p class="card-text">We offer a wide range of high-quality tents for all occasions, ensuring
-                            comfort, style, and safety:
-                            <br><br><b> 1) Wedding Tents </b><br><br>
-                            <b> 2)Reception & Engagement Tents</b> <br><br>
-                            <b> 3) Birthday & Anniversary Tents</b> <br><br>
-                            <b> 4) Corporate Event Tents </b> <br><br>
-                            <b> 5) Religious & Community Function Tents </b><br><br>
-                            <b> 6) Festival & Fair Tents </b>
-                        </p>
-                        <!-- <div class="mapouter">
-                            <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0"
-                                    scrolling="no" marginheight="0" marginwidth="0"
-                                    src="https://maps.google.com/maps?width=250&height=285&hl=en&q=Shree Shanti Bhagawati Secondary School&t=k&z=13&ie=UTF8&iwloc=B&output=embed"></iframe><a
-                                    href="https://fridaynightfunkin.lol/">fnf</a></div>
-
-                            <style>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://www.rcc.edu/images/facilities/cafeteria/Catering_iStock-650655146_A-lg.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">&nbsp;&nbsp;&nbsp;&nbsp;Catering Service 🍽️</h3>
-                        <h5 class="mt-3 ml-4 text-secondary">
-                            
-                        </h5>
-                        <p class="card-text">Serving delicious memories with every plate — because great food makes every occasion unforgettable." 🍽️✨
-                            <br><br><b> 1)🍽️Wedding & Receptions </b><br><br>
-                            <b> 2)🎉Birthday & Anniversary Parties</b> <br><br>
-                            <b> 3)🏢Corporate Events & Meeting</b> <br><br>
-                            <b> 4)🙏Religious & Cultural Functions </b> <br><br>
-                            <b> 5)Customized Theme-Based Catering 🎨🍽️</b> <br><br>
-                            <b> 6)Full Service: Setup to Clean-Up 🧹✨</b>
-                           
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://th.bing.com/th/id/OIP.HlFVZumCmO9aSI_w5x7tIgHaEK?rs=1&pid=ImgDetMain"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">Card title</h3>
-                        <h5 class="mt-3 ml-4 text-secondary">
-                            August 7, 2025
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey"
-                                class="bi bi-calendar-event" viewBox="0 0 16 16">
-                                <path
-                                    d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
-                                <path
-                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
-                            </svg>
-                        </h5>
-                        <p class="card-text">lorem ipsum
-                            This is a longer card with supporting text below as a natural lead-in to
-                            additional content.This is a longer card with supporting text below as a natural lead-in to
-                            additional content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://th.bing.com/th/id/OIP.dB24XlY-rM2JPRHxNqYB4wHaFj?rs=1&pid=ImgDetMain"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text text-dark">Hello This card.</p>
-                    </div>
-                </div>
-            </div>
+      <!-- Each Card Example -->
+      <div class="col-md-4"><div class="card hover-lift">Lift Up</div></div>
+      <div class="col-md-4"><div class="card hover-scale">Scale Up</div></div>
+      <div class="col-md-4"><div class="card hover-scale-down">Scale Down</div></div>
+      <div class="col-md-4"><div class="card hover-rotate">Rotate</div></div>
+      <div class="col-md-4"><div class="card hover-skew">Skew</div></div>
+      <div class="col-md-4"><div class="card hover-glow">Glow</div></div>
+      <div class="col-md-4"><div class="card hover-inner-shadow">Inner Shadow</div></div>
+      <div class="col-md-4"><div class="card hover-border-grow">Border Grow</div></div>
+      <div class="col-md-4"><div class="card hover-overlay">Overlay</div></div>
+      <div class="col-md-4">
+        <div class="card hover-bg-zoom" style="background-image: url('https://picsum.photos/300');">
+          Background Zoom
         </div>
-    </span>
-
-    <!-- Footer Section -->
-    <footer class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row">
-                <!-- Contact Info Section -->
-                <div class="col-md-4">
-                    <h5>Contact Info</h5>
-                    <p><strong>Phone:</strong> 123-456-7890</p>
-                    <p><strong>Email:</strong> info@youreventsite.com</p>
-                    <p><strong>Address:</strong> 123 Event St, City, Country</p>
-                </div>
-
-                <!-- Quick Links Section -->
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="/home" class="text-white text-decoration-none">Home</a></li>
-                        <li><a href="/about" class="text-white text-decoration-none">About Us</a></li>
-                        <li><a href="/services" class="text-white text-decoration-none">Our Services</a></li>
-                        <li><a href="/portfolio" class="text-white text-decoration-none">Portfolio</a></li>
-                        <li><a href="/contact" class="text-white text-decoration-none">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <!-- Call to Action Section -->
-                <div class="col-md-4">
-                    <h5>Get in Touch</h5>
-                    <p>Ready to plan your next event? <a href="/contact" class="btn btn-primary">Contact Us</a></p>
-                </div>
-            </div>
-
-            <!-- Newsletter Section -->
-            <div class="row mt-4">
-                <div class="col-md-12 text-center">
-                    <h5>Subscribe to Our Newsletter</h5>
-                    <form action="/subscribe" method="post">
-                        <input type="email" name="email" class="form-control w-50 d-inline"
-                            placeholder="Your email address" required>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Legal Section -->
-            <div class="row mt-4">
-                <div class="col-md-12 text-center">
-                    <p>&copy; 2025 Your Event Management. All rights reserved.</p>
-                    <p>
-                        <a href="/privacy-policy" class="text-white text-decoration-none">Privacy Policy</a> |
-                        <a href="/terms-conditions" class="text-white text-decoration-none">Terms & Conditions</a>
-                    </p>
-                </div>
-            </div>
-
-            <!-- Developer Section -->
-            <div class="row mt-4">
-                <div class="col-md-12 text-center">
-                    <p>Developed by <a href="https://www.developerwebsite.com" class="text-white text-decoration-none"
-                            target="_blank">Tech BARSA</a></p>
-                </div>
-            </div>
-
+      </div>
+      <div class="col-md-4"><div class="card hover-flip-y">Flip Y</div></div>
+      <div class="col-md-4"><div class="card hover-flip-x">Flip X</div></div>
+      <div class="col-md-4"><div class="card hover-glass">Glass Effect</div></div>
+      <div class="col-md-4"><div class="card hover-zoom-lift">Zoom + Lift</div></div>
+      <div class="col-md-4"><div class="card hover-color-shift">Color Shift</div></div>
+      <div class="col-md-4"><div class="card hover-opacity">Opacity Fade</div></div>
+      <div class="col-md-4">
+        <div class="card hover-slide-content">
+          Hover Me
+          <div class="slide-text">Sliding Content</div>
         </div>
-    </footer>
+      </div>
+      <div class="col-md-4"><div class="card hover-gradient-border">Gradient Border</div></div>
+      <div class="col-md-4"><div class="card hover-tilt">Tilt</div></div>
+      <div class="col-md-4"><div class="card hover-shine">Shine</div></div>
+      <div class="col-md-4"><div class="card hover-radius-morph">Radius Morph</div></div>
 
+    </div>
+  </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
 </body>
-
 </html>

@@ -52,15 +52,120 @@ body.light-mode {
 }
 
 
+/* 1. Lift and Shadow */
+.card-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 2. Scale Up */
+  .card-scale {
+    transition: transform 0.3s ease;
+  }
+  .card-scale:hover {
+    transform: scale(1.05);
+  }
+  
+  /* 3. Overlay Reveal */
+  .card-overlay {
+    position: relative;
+    overflow: hidden;
+  }
+  .card-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .card-overlay:hover::after {
+    opacity: 1;
+  }
+  
+  /* 4. Image Zoom */
+  .card-zoom img {
+    transition: transform 0.5s ease;
+  }
+  .card-zoom:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* 5. Border Glow */
+  .card-glow {
+    transition: box-shadow 0.3s ease;
+  }
+  .card-glow:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 200, 255, 0.6);
+  }
+  
+  /* 6. Tilt / 3D Effect (simple) */
+  .card-tilt {
+    transform-style: preserve-3d;
+    transition: transform 0.2s ease;
+  }
+  .card-tilt:hover {
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+  }
+  
+  /* 7. Content Slide Up */
+  .card-slide {
+    overflow: hidden;
+    position: relative;
+  }
+  .card-slide .content {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    background: rgba(255,255,255,0.9);
+    transition: bottom 0.3s ease;
+    padding: 1rem;
+  }
+  .card-slide:hover .content {
+    bottom: 0;
+  }
+  
+  /* 8. Glassmorphism Blur */
+  .card-glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: background 0.3s ease;
+  }
+  .card-glass:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* 9. Gradient Animation */
+  .card-gradient {
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    background-size: 400% 400%;
+    transition: background-position 0.5s ease;
+  }
+  .card-gradient:hover {
+    background-position: right center;
+  }
+  
+
+
+
+
+
+
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
     background-color: var(--dark_1);
+    padding:0px;
+    margin:0px;
     color: var(--light_1);
     height: 100vh;
+    overflow-x:hidden;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 .header {
@@ -71,7 +176,7 @@ body {
     backdrop-filter: blur(5px);
     background-color: rgba(var(--dark_trans_2), 0.5);
     position: fixed;
-    width: 100%;
+    width: 100vw;
     top: 0px;
     z-index: 2;
 }
@@ -93,8 +198,8 @@ body {
     border: 1px solid grey;
     border-radius: 100%;
     position: fixed;
-    bottom: 50%;
-    right: 20px;
+    bottom: 10%;
+    left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;

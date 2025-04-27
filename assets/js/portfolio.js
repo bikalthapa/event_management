@@ -35,7 +35,7 @@ function read_portfolio(indx) {
     const item = portfolioData[indx];
     modal.setTitle(item.title);
     modal.setBody(card_design(item, indx, false));
-    modal.setFooter(`<button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>`);
+    modal.setFooter(``);
     modal.show();
 }
 

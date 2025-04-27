@@ -1,6 +1,6 @@
 /* This is for hero section only  */
 .hero_section{
-    width:100%;
+    min-width:100vw;
     margin-top:75px;
     max-height:100vh;
     overflow:hidden;
@@ -53,6 +53,10 @@
     overflow:hidden;
     box-shadow:var(--shadow_1);
 }
+.service_cards img{
+    aspect-ratio:16/9;
+    transition:transform 0.09s linear;
+}
 
 .service_cards .card-title {
     font-size: 35px;
@@ -80,13 +84,19 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: opacity 0.09s linear;
 }
-
+.service_cards:hover .card-img-overlay{
+    opacity:0;
+}
+.service_cards:hover img{
+    transform: scale(1.05) translateY(-5px);
+}
 
 
 /* This is for parallax effect  */
 .parallax {
-    background-image: url('../images/wedding.jpg');
+    background-image: url('https://photolifenepal.com/wp-content/uploads/2023/02/wedding-image-2.jpg');
     height: clamp(200px, 100vh, 400px);
     background-attachment: fixed;
     background-position: center;
@@ -124,6 +134,9 @@
     flex-direction:column;
     box-shadow:var(--shadow_1);
     text-align:center;
+}
+.counter:hover{
+    transform:scale(1.05);
 }
 .counter .value{
     font-size:30px;
@@ -238,6 +251,10 @@
     padding:20px;
     border-radius:5px;
     box-shadow:var(--shadow_1);
+    transition:transform 0.09s linear;
+}
+.skills_container .skills_card:hover{
+    transform:scale(1.05);
 }
 .skills_card .skill_value{
     font-weight:350;

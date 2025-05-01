@@ -63,9 +63,9 @@ function handelBlog(typ, id){
     var modal = new CustomModal("blogsModal");
     if(typ=="latest"){
         modal.setTitle(blogsData.latestBlogs[id].title);
-        modal.setBody(`<img src="${blogsData.latestBlogs[id].imageUrl}" class="w-100">`)
+        modal.setBody(`<img src="${blogsData.latestBlogs[id].imageUrl}" class="w-100"><br><p class="modaL_blog_desc">${blogsData.latestBlogs[id].description}</p>`);
     }else{
-        modal.setBody(`<img src="${blogsData.mostPopularBlogs[id].imageUrl}" class="w-100">`)
+        modal.setBody(`<img src="${blogsData.mostPopularBlogs[id].imageUrl}" class="w-100"><br><p class="modaL_blog_desc">${blogsData.latestBlogs[id].description}</p>`);
         modal.setTitle(blogsData.mostPopularBlogs[id].title);
     }
     // modal.setBody(blogsData.latestBlogs[id].shortDescription);

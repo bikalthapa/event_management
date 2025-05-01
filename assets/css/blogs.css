@@ -39,3 +39,9 @@
     font-weight:250;
 }
 
+.modaL_blog_desc{
+    font-weight:300;
+    color:var(--light_1);
+    text-align:justify;
+    margin-top:10px;
+}

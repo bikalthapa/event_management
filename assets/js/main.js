@@ -115,13 +115,13 @@ document.addEventListener("DOMContentLoaded", () => {
 // Footer data
 let company_data = {
     name: "Something",
-    phone: 984244444444,
-    email: "unknown40@gmail.com",
-    address: "Letang-5, Morang",
+    phone: 9808166785,
+    email: "bijayashani1995@gmail.com",
+    address: "Pathri Sanischare-4, Morang",
     links: [
         {
             logo_path : "./assets/icons/facebook.png",
-            link_path : ""
+            link_path : "https://www.facebook.com/bijay.sahani.1272"
         },
         {
             logo_path : "./assets/icons/insta.png",

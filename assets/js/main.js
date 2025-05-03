@@ -116,8 +116,8 @@ document.addEventListener("DOMContentLoaded", () => {
 let company_data = {
     name: "Something",
     phone: 9808166785,
-    email: "bijayashani1995@gmail.com",
-    address: "Pathri Sanischare-4, Morang",
+    email: "bijayashani939393@gmail.com",
+    address: "Pathri, Morang Nepal",
     links: [
         {
             logo_path : "./assets/icons/facebook.png",
@@ -143,9 +143,16 @@ document.getElementById("address").innerHTML = company_data.address;
 let social_div = document.getElementById("social_links");
 social_div.innerHTML = "";
 company_data.links.forEach((val, indx)=>{
-    social_div.innerHTML += `
+    if(val.link_path!=""){
+        social_div.innerHTML += `
                         <a href="${val.link_path}" target="_blank">
                             <img src="${val.logo_path}" alt="social_media">
                         </a>`;
+    }else{
+        social_div.innerHTML += `
+        <a>
+            <img src="${val.logo_path}" alt="social_media">
+        </a>`;
+    }
 })
 

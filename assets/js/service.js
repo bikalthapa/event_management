@@ -14,7 +14,7 @@ const renderServices = (services) => {
         const serviceCard = `
             <div class="col">
                 <div class="image-box">
-                    <img src="${service.imgSrc}" class="img-fluid" alt="${service.title}">
+                    <img src="${service.imgSrc}" class="img-fluid" loading="lazy" alt="${service.title}">
                     <div class="overlay" data-bs-toggle="modal" data-bs-target="#portfolioModal" onclick="openModal(${service.id})">
                         <h3>${service.title}</h3>
                     </div>
@@ -28,7 +28,7 @@ const renderServices = (services) => {
 // Function to open modal and populate it with service data
 function openModal(serviceId) {
     portfolioModal.setTitle(servicesData[serviceId].title);
-    portfolioModal.setBody(servicesData[serviceId].shortDescription);
+    portfolioModal.setBody(`<img src="${servicesData[serviceId].imgSrc}" style="width:100%;"><br><br>`+servicesData[serviceId].shortDescription);
     portfolioModal.setFooter('');
     portfolioModal.show();
 }

@@ -50,7 +50,10 @@ body.light-mode {
     --light_trans_3: 73, 80, 87;
     --light_trans_4: 108, 117, 125;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 
 /* 1. Lift and Shadow */
 .card-lift {
